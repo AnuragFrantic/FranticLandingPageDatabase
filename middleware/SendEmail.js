@@ -6,8 +6,8 @@ const transporter = createTransport({
 
     secure: false,
     auth: {
-        user: 'ap166392@gmail.com',
-        pass: 'dddw hbyt wkwn iqmw',
+        user: 'sales@franticpro.com',
+        pass: 'kyvz tmvm mzvq xqag',
     },
 });
 
@@ -16,7 +16,7 @@ const transporter = createTransport({
 
 const send_email = (to, subject, htmlContent) => {
     const mailOptions = {
-        from: 'ap166392@gmail.com',
+        from: 'sales@franticpro.com',
         to: to,
         subject: `${subject}`,
         html: `${htmlContent}`,
