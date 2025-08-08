@@ -48,22 +48,22 @@ const connect = async () => {
 
 
 
-// let filePath = path.join(__dirname, './cert.pem');
-// const certificate = fs.readFileSync(filePath, 'utf8');
-// let filePath1 = path.join(__dirname, './privatekey.pem');
-// const pvtkey = fs.readFileSync(filePath1, 'utf8');
-// const options = {
-//     key: pvtkey,
-//     cert: certificate,
-// };
-// https.createServer(options, app)
-//     .listen(port, function (req, res) {
-//         connect()
-//         console.log("Server started at port https " + port);
-//     });
+let filePath = path.join(__dirname, './cert.pem');
+const certificate = fs.readFileSync(filePath, 'utf8');
+let filePath1 = path.join(__dirname, './privatekey.pem');
+const pvtkey = fs.readFileSync(filePath1, 'utf8');
+const options = {
+    key: pvtkey,
+    cert: certificate,
+};
+https.createServer(options, app)
+    .listen(port, function (req, res) {
+        connect()
+        console.log("Server started at port https " + port);
+    });
 
 
-app.listen(port, () => {
-    connect()
-    console.log('Server is up on port ' + port)
-})
+// app.listen(port, () => {
+//     connect()
+//     console.log('Server is up on port ' + port)
+// })

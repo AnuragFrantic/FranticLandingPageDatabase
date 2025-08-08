@@ -7,7 +7,7 @@ const transporter = createTransport({
     secure: false,
     auth: {
         user: 'sales@franticpro.com',
-        pass: 'kyvz tmvm mzvq xqag',
+        pass: 'zskf bpfc qizn abru',
     },
 });
 
