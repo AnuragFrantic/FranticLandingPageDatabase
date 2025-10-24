@@ -35,7 +35,7 @@ exports.createContact = async (req, res) => {
     const subject = "New Contact Form Submission";
     const htmlContent = `
   <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 30px;">
-    <div style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+    <div style="max-width: 600px; margin: auto; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: auto;">
       <div style="background-color: #007bff; padding: 20px; color: white; text-align: center;">
         <h2 style="margin: 0;">🚀 New Contact Request</h2>
       </div>
