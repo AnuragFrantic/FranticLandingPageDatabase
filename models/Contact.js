@@ -31,9 +31,13 @@ const contactSchema = new mongoose.Schema({
         type: String, // e.g., 'homepage', 'landingpage', 'service/web', etc.
         required: true
     },
-    ipaddress: {
+    ipv4: {
         type: String,
         required: true,
+    },
+    ipv6: {
+        type: String,
+        default: null,
     },
     createdAt: {
         type: Date,

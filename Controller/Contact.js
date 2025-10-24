@@ -11,7 +11,8 @@ exports.createContact = async (req, res) => {
       service,
       message,
       page,
-      ipaddress
+      ipv4,
+      ipv6
     } = req.body;
 
 
@@ -24,7 +25,8 @@ exports.createContact = async (req, res) => {
       service,
       message,
       page,
-      ipaddress
+      ipv4,
+      ipv6
     });
 
     await contact.save();
@@ -64,8 +66,12 @@ exports.createContact = async (req, res) => {
             <td style="padding: 10px;">${page}</td>
           </tr>
            <tr style="background-color: #f2f2f2;">
-            <td style="padding: 10px; font-weight: bold;">IP Address:</td>
-            <td style="padding: 10px;">${ipaddress}</td>
+            <td style="padding: 10px; font-weight: bold;">IP v4:</td>
+            <td style="padding: 10px;">${ipv4}</td>
+          </tr>
+          <tr style="background-color: #f2f2f2;">
+            <td style="padding: 10px; font-weight: bold;">IP v4:</td>
+            <td style="padding: 10px;">${ipv6}</td>
           </tr>
         </table>
         <p style="margin-top: 30px; font-size: 14px; color: #777;">
