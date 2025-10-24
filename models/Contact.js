@@ -31,6 +31,10 @@ const contactSchema = new mongoose.Schema({
         type: String, // e.g., 'homepage', 'landingpage', 'service/web', etc.
         required: true
     },
+    ipaddress: {
+        type: String,
+        required: true,
+    },
     createdAt: {
         type: Date,
         default: Date.now
