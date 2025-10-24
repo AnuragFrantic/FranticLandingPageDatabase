@@ -70,7 +70,7 @@ exports.createContact = async (req, res) => {
             <td style="padding: 10px;">${ipv4}</td>
           </tr>
           <tr style="background-color: #f2f2f2;">
-            <td style="padding: 10px; font-weight: bold;">IP v4:</td>
+            <td style="padding: 10px; font-weight: bold;">IP v6:</td>
             <td style="padding: 10px;">${ipv6}</td>
           </tr>
         </table>
