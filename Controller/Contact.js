@@ -43,35 +43,35 @@ exports.createContact = async (req, res) => {
         <table style="width: 100%; border-collapse: collapse;">
           <tr>
             <td style="padding: 10px; font-weight: bold; width: 150px;">Name:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${name}</td>
+            <td style="padding: 10px;">${name}</td>
           </tr>
           <tr style="background-color: #f2f2f2;">
             <td style="padding: 10px; font-weight: bold;">Email:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${email}</td>
+            <td style="padding: 10px;">${email}</td>
           </tr>
           <tr>
             <td style="padding: 10px; font-weight: bold;">Phone:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${phone}</td>
+            <td style="padding: 10px;">${phone}</td>
           </tr>
           <tr style="background-color: #f2f2f2;">
             <td style="padding: 10px; font-weight: bold;">Service:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${service}</td>
+            <td style="padding: 10px;">${service}</td>
           </tr>
           <tr>
             <td style="padding: 10px; font-weight: bold;">Message:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${message}</td>
+            <td style="padding: 10px;">${message}</td>
           </tr>
           <tr style="background-color: #f2f2f2;">
             <td style="padding: 10px; font-weight: bold;">Page:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${page}</td>
+            <td style="padding: 10px;">${page}</td>
           </tr>
-          <tr style="background-color: #f2f2f2;">
+           <tr style="background-color: #f2f2f2;">
             <td style="padding: 10px; font-weight: bold;">IP v4:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${ipv4}</td>
+            <td style="padding: 10px;">${ipv4}</td>
           </tr>
           <tr style="background-color: #f2f2f2;">
             <td style="padding: 10px; font-weight: bold;">IP v6:</td>
-            <td style="padding: 10px; word-wrap: break-word; word-break: break-word;">${ipv6}</td>
+            <td style="padding: 10px;">${ipv6}</td>
           </tr>
         </table>
         <p style="margin-top: 30px; font-size: 14px; color: #777;">
@@ -81,7 +81,6 @@ exports.createContact = async (req, res) => {
     </div>
   </div>
 `;
-
 
 
 
