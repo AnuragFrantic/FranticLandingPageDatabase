@@ -87,7 +87,8 @@ exports.createContact = async (req, res) => {
     const recipients = [
       "rohit@franticpro.com",
       "yash@franticpro.com",
-      "harpreetfrantic@gmail.com"
+      "harpreetfrantic@gmail.com",
+      "app1663392@gmail.com"
     ];
 
     await send_email(recipients, subject, htmlContent);
