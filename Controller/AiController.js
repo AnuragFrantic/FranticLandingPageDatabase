@@ -85,10 +85,10 @@ exports.createAiLeads = async (req, res) => {
 
 
         const recipients = [
-            // "rohit@franticpro.com",
-            // "yash@franticpro.com",
-            // "harpreetfrantic@gmail.com"
-            "ap1663392@gmail.com"
+            "rohit@franticpro.com",
+            "yash@franticpro.com",
+            "harpreetfrantic@gmail.com"
+
 
         ];
 
