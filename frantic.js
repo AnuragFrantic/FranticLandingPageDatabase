@@ -56,21 +56,21 @@ const pvtkey = fs.readFileSync(filePath1, 'utf8');
 //     key: pvtkey,
 //     cert: certificate,
 // };
-const options = {
-    cert: fs.readFileSync('/etc/letsencrypt/live/software.franticpro.com/fullchain.pem', 'utf-8'),
-    key: fs.readFileSync('/etc/letsencrypt/live/software.franticpro.com/privkey.pem', 'utf-8'),
-};
+// const options = {
+//     cert: fs.readFileSync('/etc/letsencrypt/live/software.franticpro.com/fullchain.pem', 'utf-8'),
+//     key: fs.readFileSync('/etc/letsencrypt/live/software.franticpro.com/privkey.pem', 'utf-8'),
+// };
 
 
 
-https.createServer(options, app)
-    .listen(port, function (req, res) {
-        connect()
-        console.log("Server started at port https " + port);
-    });
+// https.createServer(options, app)
+//     .listen(port, function (req, res) {
+//         connect()
+//         console.log("Server started at port https " + port);
+//     });
 
 
-// app.listen(port, () => {
-//     connect()
-//     console.log('Server is up on port ' + port)
-// })
+app.listen(port, () => {
+    connect()
+    console.log('Server is up on port ' + port)
+})
